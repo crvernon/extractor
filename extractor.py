@@ -194,7 +194,7 @@ def workflow(buildings_shp_file, target_shp_file, existing_shp_file, output_dire
         raise ValueError(msg)
 
     # offset the clipped geometries by the user specified amount
-    if x_offset > 0 and y_offset > 0:
+    if x_offset > 0 or y_offset > 0:
         subset_gdf[geometry_field_name] = subset_gdf.translate(xoff=x_offset, yoff=y_offset)
 
     # merge the result into an existing dataset
