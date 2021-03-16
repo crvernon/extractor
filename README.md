@@ -1,7 +1,7 @@
 # extractor
 Code for extracting a subset of building data using target features in another shapefile.
 
-## Usage
+## Usage using the `extractor.py` script
 ```python
 
 # input files
